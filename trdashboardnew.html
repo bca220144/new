@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 5px solid #3e8e41;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-banner {
+            margin-bottom: 20px;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-stats, .upcoming-events, .performance-analytics {
+            background-color: #f1f8e9;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teacher Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="attendance.php">Attendance</a></li>
+                <li><a href="grademanagement.php">Grades</a></li>
+                <li><a href="assignment.php">Assignments</a></li>
+                <li><a href="assessment_management.php">Assignments</a></li>
+                <li><a href="performance.php">Performance Overview</a></li>
+            </ul>
+            <div class="profile-icon" style="font-size: 24px;">👤</div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <div class="welcome-banner">
+                <h2>Welcome, [Teacher Name]</h2>
+                <p>Date: [Current Date]</p>
+            </div>
+
+            <div class="quick-stats">
+                <h3>Quick Stats</h3>
+                <div>Total Students: [Number]</div>
+                <div>Total Classes: [Number]</div>
+                <div>Average Attendance: [Percentage]</div>
+                <div>Recent Assignments: [Count]</div>
+            </div>
+
+            <div class="upcoming-events">
+                <h3>Upcoming Events</h3>
+                <p>[Calendar Widget]</p>
+                <ul>
+                    <li>Assignment due on [Date]</li>
+                    <li>Exam on [Date]</li>
+                </ul>
+            </div>
+
+            <div class="performance-analytics">
+                <h3>Performance Analytics</h3>
+                <p>[Insert Charts or Graphs Here]</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Organization</p>
+        <p><a href="#">Help</a> | <a href="#">Contact</a></p>
+    </footer>
+</body>
+</html>
